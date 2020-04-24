@@ -3,25 +3,20 @@
      <keep-alive exclude="detail">
        <router-view></router-view>
      </keep-alive>
-   <maintab v-show="tabBarShow"></maintab>
+   <maintab></maintab>
   </div>
 </template>
 
 <script>
 import maintab from 'components/content/maintabbar/maintab'
 
-import {mapGetters} from 'vuex'
+
 
 export default {
   name: 'app',
   components: {
    maintab
   },
-  computed:{
-    ...mapGetters([
-      'tabBarShow'
-    ])
-  }
 }
 </script>
 

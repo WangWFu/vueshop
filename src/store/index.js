@@ -5,8 +5,6 @@ import actions from './actions'
 import mutations from './mutations'
 Vue.use(Vuex);
 const state ={
-   // 默认tabBar显示
-   tabBarShow: true,
     //购物车数据
     cartList:[]
 }
